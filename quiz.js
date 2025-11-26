@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  //Get the feedback
   const feedback = document.getElementById("feedback");
 
   function checkAnswer() {
