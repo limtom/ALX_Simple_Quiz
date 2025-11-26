@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const checkedRadio = document.querySelector('[name="quiz"]:checked');
     let userAnswer = checkedRadio.value;
 
-    userAnswer === correctAnswer
-      ? (feedback.textContent = "Correct! Well done.")
-      : (feedback.textContent = "That's incorrect. Try again!");
+    if (userAnswer === correctAnswer) {
+      feedback.textContent = "Correct! Well done.";
+    } else {
+      feedback.textContent = "That's incorrect. Try again!";
+    }
   }
 
   //Get the submitButton
